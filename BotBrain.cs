@@ -133,6 +133,11 @@ namespace CyberAwarenessBotGUI
                 return "curious";
             }
 
+            if (input.Contains("confused") || input.Contains("overwhelmed") || input.Contains("unsure"))
+            {
+                return "confused";
+            }
+
             return "";
         }
 
@@ -207,7 +212,8 @@ namespace CyberAwarenessBotGUI
             {
                 currentTopic = "password";
 
-                return passwordResponses[random.Next(passwordResponses.Length)];
+                //return passwordResponses[random.Next(passwordResponses.Length)];
+                return ApplySentiment(passwordResponses[random.Next(passwordResponses.Length)]);
             }
 
             // Phishing
@@ -215,7 +221,8 @@ namespace CyberAwarenessBotGUI
             {
                 currentTopic = "phishing";
 
-                return phishingResponses[random.Next(phishingResponses.Length)];
+                //return phishingResponses[random.Next(phishingResponses.Length)];
+                return ApplySentiment(phishingResponses[random.Next(phishingResponses.Length)]);
             }
 
             // Links
@@ -223,7 +230,8 @@ namespace CyberAwarenessBotGUI
             {
                 currentTopic = "link";
 
-                return linkResponses[random.Next(linkResponses.Length)];
+                //return linkResponses[random.Next(linkResponses.Length)];
+                return ApplySentiment(linkResponses[random.Next(linkResponses.Length)]);
             }
 
             // Public Wi-Fi
@@ -231,7 +239,8 @@ namespace CyberAwarenessBotGUI
             {
                 currentTopic = "wifi";
 
-                return wifiResponses[random.Next(wifiResponses.Length)];
+                //return wifiResponses[random.Next(wifiResponses.Length)];
+                return ApplySentiment(wifiResponses[random.Next(wifiResponses.Length)]);
             }
 
             // WhatsApp scams
@@ -239,7 +248,8 @@ namespace CyberAwarenessBotGUI
             {
                 currentTopic = "scam";
 
-                return scamResponses[random.Next(scamResponses.Length)];
+               // return scamResponses[random.Next(scamResponses.Length)];
+                return ApplySentiment(scamResponses[random.Next(scamResponses.Length)]);
             }
 
             // Exit
@@ -274,9 +284,13 @@ namespace CyberAwarenessBotGUI
                 return "Great question — curiosity is the best way to stay safe online.\n\n" + response;
             }
 
+            if (lastSentiment == "confused")
+            {
+                return "Cybersecurity can feel overwhelming at first, but learning small safety habits over time can make a big difference.\n\n" + response;
+            }
+
             return response;
         }//sentiment handling helper
-
 
 
     }
