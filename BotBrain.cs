@@ -253,7 +253,32 @@ namespace CyberAwarenessBotGUI
             {
                 return "I am not sure how to answer that yet. Try asking about passwords, phishing, or scams.";
             }
-        }
+        }//get response
+
+
+
+        private string ApplySentiment(string response)
+        {
+            if (lastSentiment == "worried")
+            {
+                return "It's completely understandable to feel worried. Scammers can be very convincing.\n\n" + response;
+            }
+
+            if (lastSentiment == "frustrated")
+            {
+                return "I understand this can feel frustrating. You're not alone, and I’m here to help.\n\n" + response;
+            }
+
+            if (lastSentiment == "curious")
+            {
+                return "Great question — curiosity is the best way to stay safe online.\n\n" + response;
+            }
+
+            return response;
+        }//sentiment handling helper
+
+
+
     }
 }
 
