@@ -123,6 +123,7 @@ namespace CyberAwarenessBotGUI
             // Follow-up conversation flow
             if (cleanInput.Contains("tell me more") ||
                 cleanInput.Contains("explain more") ||
+                cleanInput.Contains("please elaborate") ||
                 cleanInput.Contains("another tip") ||
                 cleanInput.Contains("more details"))
             {
