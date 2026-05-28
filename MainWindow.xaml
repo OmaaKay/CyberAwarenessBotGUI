@@ -1,0 +1,107 @@
+﻿<Window x:Class="CyberAwarenessBotGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="South African Cyber-Safety Assistant"
+        Height="700"
+        Width="550"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4F6F9">
+
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0"
+                Background="#2C3E50"
+                CornerRadius="8"
+                Padding="15"
+                Margin="0,0,0,15">
+
+            <StackPanel>
+
+            <TextBlock FontFamily="Consolas"
+           FontSize="12"
+           Background="#1E1E1E"
+           Foreground="#00FF00"
+           Padding="12"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           TextAlignment="Left"
+           TextWrapping="NoWrap"
+           Width="500"
+           Height="160">
+
+|------------------------------------------|
+|    CYBER GUARD SA - CYBER UNIT           |
+|------------------------------------------|
+|    | o  o |   Secure Bot Active          |
+|    |  __  |                              |
+|    | /  \ |   Monitoring Systems         |
+|    |------|                              |
+|------------------------------------------|
+
+</TextBlock>
+
+
+            
+            </StackPanel>
+
+        </Border>
+
+        <!-- Chat Area -->
+        <ScrollViewer Grid.Row="1"
+                      x:Name="ChatScrollContainer"
+                      VerticalScrollBarVisibility="Auto">
+
+            <TextBox x:Name="ChatLogDisplay"
+                     IsReadOnly="True"
+                     TextWrapping="Wrap"
+                     FontFamily="Segoe UI"
+                     FontSize="14"
+                     Padding="12"
+                     Background="White"
+                     BorderBrush="#BDC3C7"
+                     BorderThickness="1"
+                     VerticalScrollBarVisibility="Disabled"/>
+        </ScrollViewer>
+
+        <!-- Input Area -->
+        <Grid Grid.Row="2" Margin="0,15,0,0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="UserInputTextBox"
+                     Grid.Column="0"
+                     Height="45"
+                     FontSize="14"
+                     Padding="8"
+                     VerticalContentAlignment="Center"
+                     BorderBrush="#BDC3C7"
+                     BorderThickness="1"
+                     KeyDown="UserInputTextBox_KeyDown"/>
+
+            <Button x:Name="SubmitButton"
+                    Content="SEND"
+                    Grid.Column="1"
+                    Width="90"
+                    Margin="12,0,0,0"
+                    Background="#27AE60"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    FontSize="14"
+                    Click="SubmitButton_Click"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
+
+
