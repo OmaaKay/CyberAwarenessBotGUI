@@ -17,3 +17,4 @@ C:\Users\Student\CyberAwarenessBotGUI\obj\Debug\net9.0-windows\refint\CyberAware
 C:\Users\Student\CyberAwarenessBotGUI\obj\Debug\net9.0-windows\CyberAwarenessBotGUI.pdb
 C:\Users\Student\CyberAwarenessBotGUI\obj\Debug\net9.0-windows\CyberAwarenessBotGUI.genruntimeconfig.cache
 C:\Users\Student\CyberAwarenessBotGUI\obj\Debug\net9.0-windows\ref\CyberAwarenessBotGUI.dll
+C:\Users\Student\CyberAwarenessBotGUI\obj\Debug\net9.0-windows\CyberAwarenessBotGUI.sourcelink.json
