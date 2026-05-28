@@ -11,6 +11,9 @@ namespace CyberAwarenessBotGUI
         // Memory variable for conversation flow
         private string currentTopic = "";
 
+        // Sentiment memory
+        private string lastSentiment = "";
+
         // Password responses
         private string[] passwordResponses =
         {
@@ -110,6 +113,28 @@ namespace CyberAwarenessBotGUI
 
             "Reporting scams helps protect other people from becoming victims of cybercrime."
         };
+
+        private string DetectSentiment(string input)
+        {
+            input = input.ToLower();
+
+            if (input.Contains("worried") || input.Contains("scared") || input.Contains("afraid"))
+            {
+                return "worried";
+            }
+
+            if (input.Contains("frustrated") || input.Contains("annoyed") || input.Contains("angry"))
+            {
+                return "frustrated";
+            }
+
+            if (input.Contains("curious") || input.Contains("interested") || input.Contains("wondering"))
+            {
+                return "curious";
+            }
+
+            return "";
+        }
 
         public string GetResponse(string userInput)
         {
