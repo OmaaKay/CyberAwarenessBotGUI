@@ -145,6 +145,9 @@ namespace CyberAwarenessBotGUI
 
             string cleanInput = userInput.ToLower().Trim();
 
+            // Detect sentiment first
+            lastSentiment = DetectSentiment(cleanInput);
+
             // Follow-up conversation flow
             if (cleanInput.Contains("tell me more") ||
                 cleanInput.Contains("explain more") ||
