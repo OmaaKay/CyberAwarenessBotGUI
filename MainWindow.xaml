@@ -24,23 +24,37 @@
 
 
 
-          <TextBlock FontFamily="Consolas"
-                       FontSize="12"
+
+<TextBlock FontFamily="Consolas"
+                       FontSize="11"
                        Background="#3A3F44"
                        Foreground="#FF007F"
-                       Padding="15"
+                       Padding="10,12,10,12"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
                        TextAlignment="Left"
-                       TextWrapping="NoWrap">
-|---------------------------------------------------------|
-|                | CYBER GUARD SA - CYBER                 |
-|    | o  o |   Secure Bot Active                         |
-|    |  __  |                                             |
-|    | /  \ |   Monitoring Systems                        |
-|    |------|                                             |
-|---------------------------------------------------------|
+                       TextWrapping="NoWrap"
+                       xml:space="preserve">
+|-------------------------------------------------------|
+| CYBER GUARD SA - CYBER UNIT                           |
+|-------------------------------------------------------|
+|    | o  o |   Secure Bot Active                       |
+|    |  __  |                                           |
+|    | /  \ |   Monitoring Systems                      |
+|    |------|                                           |
+|-------------------------------------------------------|
             </TextBlock>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

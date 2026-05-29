@@ -13,6 +13,12 @@
   <Page Include="MainWindow.xaml" />
 </ItemGroup>
 
+<ItemGroup>
+    <Content Include="audio\greeting.wav">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+</ItemGroup>
+
 </Project>
 
 
