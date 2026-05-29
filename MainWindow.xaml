@@ -17,39 +17,39 @@
 
         <!-- Header -->
         <Border Grid.Row="0"
-                Background="#2C3E50"
+                Background="#3A3F44"
                 CornerRadius="8"
                 Padding="15"
                 Margin="0,0,0,15">
 
-            <StackPanel>
-
-            <TextBlock FontFamily="Consolas"
-           FontSize="12"
-           Background="#1E1E1E"
-           Foreground="#00FF00"
-           Padding="12"
-           HorizontalAlignment="Left"
-           VerticalAlignment="Top"
-           TextAlignment="Left"
-           TextWrapping="NoWrap"
-           Width="500"
-           Height="160">
-
-|------------------------------------------|
-|    CYBER GUARD SA - CYBER UNIT           |
-|------------------------------------------|
-|    | o  o |   Secure Bot Active          |
-|    |  __  |                              |
-|    | /  \ |   Monitoring Systems         |
-|    |------|                              |
-|------------------------------------------|
-
-</TextBlock>
 
 
-            
-            </StackPanel>
+          <TextBlock FontFamily="Consolas"
+                       FontSize="12"
+                       Background="#3A3F44"
+                       Foreground="#FF007F"
+                       Padding="15"
+                       HorizontalAlignment="Stretch"
+                       VerticalAlignment="Stretch"
+                       TextAlignment="Left"
+                       TextWrapping="NoWrap">
+|---------------------------------------------------------|
+|                | CYBER GUARD SA - CYBER                 |
+|    | o  o |   Secure Bot Active                         |
+|    |  __  |                                             |
+|    | /  \ |   Monitoring Systems                        |
+|    |------|                                             |
+|---------------------------------------------------------|
+            </TextBlock>
+
+
+
+
+
+
+
+
+
 
         </Border>
 
@@ -93,7 +93,7 @@
                     Grid.Column="1"
                     Width="90"
                     Margin="12,0,0,0"
-                    Background="#27AE60"
+                    Background="#3A8E7A"
                     Foreground="White"
                     FontWeight="Bold"
                     FontSize="14"
@@ -103,5 +103,24 @@
 
     </Grid>
 </Window>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
