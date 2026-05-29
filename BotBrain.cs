@@ -114,6 +114,18 @@ namespace CyberAwarenessBotGUI
             "Reporting scams helps protect other people from becoming victims of cybercrime."
         };
 
+        // Unknown input responses
+        private string[] unknownResponses =
+        {
+            "I am not sure I understand. Could you rephrase your question?",
+
+            "I do not recognize that cybersecurity topic yet. Try asking about passwords, scams, phishing, or suspicious links.",
+
+            "I am still learning. Could you try asking your question differently?",
+
+            "I could not fully understand your request. Please try rewording your question."
+        };
+
         private string DetectSentiment(string input)
         {
             input = input.ToLower();
@@ -259,10 +271,12 @@ namespace CyberAwarenessBotGUI
             }
 
             // Default response
+            
             else
             {
-                return "I am not sure how to answer that yet. Try asking about passwords, phishing, or scams.";
+                return unknownResponses[random.Next(unknownResponses.Length)];
             }
+
         }//get response
 
 
